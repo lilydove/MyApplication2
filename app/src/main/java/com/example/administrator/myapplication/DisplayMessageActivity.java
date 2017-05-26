@@ -13,6 +13,10 @@ public class DisplayMessageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_message);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        // 如果你的minSdkVersion属性是11活更高, 应该这么用:
+        // getActionBar().setDisplayHomeAsUpEnabled(true);
+
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
         TextView textView = new TextView(this);

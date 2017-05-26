@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:MyApp="http://schemas.android.com/apk/res-auto">
+    <!-- search,displayed as a button of action-->
+    <item android:id="@+id/action_search"
+          android:icon="@drawable/ic_action_search"
+          android:title="@string/action_search"
+          MyApp:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        MyApp:showAsAction="never"/>
+</menu>

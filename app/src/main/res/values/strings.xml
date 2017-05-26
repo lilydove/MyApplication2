@@ -3,5 +3,6 @@
     <string name="edit_message">输入信息</string>
     <string name="button_send">发送</string>
     <string name="action_settings">设置</string>
+    <string name="action_search">搜索</string>
     <string name="title_activity_display_message">我的消息</string>
 </resources>
