@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--当仅支持 Android 3.0 和更高版本-->
+    <!-- 应用于程序或者活动的主题 -->
+    <style name="CustomActionBarTheme30"
+        parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar30</item>
+    </style>
+
+    <!-- ActionBar 样式 -->
+    <style name="MyActionBar30"
+        parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/actionbar_background</item>
+    </style>
+
+
+<!-- 支持 Android 2.1 when using Support lib -->
+    <!-- 应用于程序或者活动的主题 -->
+    <style name="CustomActionBarTheme21"
+        parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar21</item>
+
+        <!-- 支持库兼容 -->
+        <item name="actionBarStyle">@style/MyActionBar21</item>
+    </style>
+
+    <!-- ActionBar 样式 -->
+    <style name="MyActionBar21"
+        parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/actionbar_background</item>
+
+        <!-- 支持库兼容 -->
+        <item name="background">@drawable/actionbar_background</item>
+    </style>
+</resources>
