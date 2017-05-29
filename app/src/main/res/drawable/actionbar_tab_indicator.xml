@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--   一个state-list drawable 是重要的，
+      它可以通过不同的背景来指出当前选择的 tab 与其他 tab 的区别。
+      创建一个 drawable 资源来处理多个按钮状态 -->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- 按钮没有按下的状态 -->

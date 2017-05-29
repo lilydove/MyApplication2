@@ -17,19 +17,52 @@
 <!-- 支持 Android 2.1 when using Support lib -->
     <!-- 应用于程序或者活动的主题 -->
     <style name="CustomActionBarTheme21"
-        parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        parent="@style/Theme.AppCompat.Light">
         <item name="android:actionBarStyle">@style/MyActionBar21</item>
-
+        <item name="android:actionBarTabStyle">@style/MyActionBarTabs21</item>
+        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText21</item>
+        <item name="android:actionMenuTextColor">@color/actionbar_text</item>
         <!-- 支持库兼容 -->
         <item name="actionBarStyle">@style/MyActionBar21</item>
+        <item name="actionBarTabStyle">@style/MyActionBarTabs21</item>
+        <item name="actionBarTabTextStyle">@style/MyActionBarTabText21</item>
+        <item name="actionMenuTextColor">@color/actionbar_text</item>
     </style>
 
     <!-- ActionBar 样式 -->
     <style name="MyActionBar21"
-        parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        parent="@style/Widget.AppCompat.Light.ActionBar">
         <item name="android:background">@drawable/actionbar_background</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText21</item>
 
         <!-- 支持库兼容 -->
         <item name="background">@drawable/actionbar_background</item>
+        <item name="titleTextStyle">@style/MyActionBarTitleText21</item>
+
+    </style>
+
+    <!-- the style of ActionBar Tabs-->
+    <style name="MyActionBarTabs21"
+        parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <!-- tab indicator -->
+        <item name="android:background">@drawable/actionbar_tab_indicator</item>
+        <!-- Support lib can be supported-->
+        <item name="background">@drawable/actionbar_tab_indicator</item>
+        <!--<item name="android:paddingLeft">0dp</item>-->
+        <!--<item name="android:paddingRight">0dp</item>-->
+    </style>
+
+    <!-- ActionBar 标题文本 -->
+    <style name="MyActionBarTitleText21"
+        parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionbar_text</item>
+        <!-- 文本颜色属性textColor是可以配合支持库向后兼容的 -->
+    </style>
+
+    <!-- ActionBar Tab标签文本样式 -->
+    <style name="MyActionBarTabText21"
+        parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textColor">@color/actionbar_text</item>
+        <!-- 文本颜色属性textColor是可以配合支持库向后兼容的 -->
     </style>
 </resources>
